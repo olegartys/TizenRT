@@ -450,6 +450,7 @@ endif # SERIAL
 
 menuconfig USBDEV
 	bool "USB Device Driver Support"
+	depends on ARCH_HAVE_USB
 	default n
 	---help---
 		USB device drivers.  See also include/tinyara/usb/usbdev.h
